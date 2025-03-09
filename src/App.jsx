@@ -6,7 +6,7 @@ import Hero from './Component/Hero'
 const App = () => {
   return (
     <>
-    <div className='pt-[4.75rem] lg:pt-[5.25rem] '>
+    <div className='pt-[0.75rem] lg:pt-[5.25rem] '>
       <Header/>
       <Hero/>
     </div>
