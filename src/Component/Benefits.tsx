@@ -17,9 +17,9 @@ const Benefits = () => {
             <div className='flex flex-wrap gap-10 mb-10'>
               {benefits.map((item)=> (
                 <div className="block border-b border-l border-red-500 relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] "
-                style={{
-                  // backgroundImage: `url(${item.backgroundUrl})`,
-                }}
+                // style={{
+                //   // backgroundImage: `url(${item.backgroundUrl})`,
+                // }}
                 key={item.id}>
                   <div className='relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none'>
                     <h5 className='h5 mb-5'>{item.title}</h5>
@@ -34,7 +34,7 @@ const Benefits = () => {
                       <Arrow/>
                     </div>
                     </div>
-                      {item.light && <GradientLight/>}
+                      <GradientLight/>
                     <div className='absolute inset-0.5 bg-n-8' style={{ clipPath: "url(#benefits)"}}>
                       <div className='absolute inset-0 opacity-0 transition-opacity hover:opacity-10'>
                         {item.imageUrl && (
